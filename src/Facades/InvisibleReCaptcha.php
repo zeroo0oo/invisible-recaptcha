@@ -1,6 +1,6 @@
 <?php
 
-namespace AlbertCht\InvisibleReCaptcha\Facades;
+namespace Zeroo0oo\InvisibleReCaptcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
