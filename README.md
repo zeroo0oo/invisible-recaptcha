@@ -19,7 +19,7 @@ In reCAPTCHA v2, users need to click the button: "I'm not a robot" to prove they
 ## Installation
 
 ```
-composer require albertcht/invisible-recaptcha
+composer require zeroo0oo/invisible-recaptcha
 ```
 
 ## Laravel 5
@@ -29,7 +29,7 @@ composer require albertcht/invisible-recaptcha
 Add ServiceProvider to the providers array in `app/config/app.php`.
 
 ```
-AlbertCht\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider::class,
+Zeroo0oo\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider::class,
 ```
 
 > It also supports package discovery for Laravel 5.5.
