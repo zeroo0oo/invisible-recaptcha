@@ -54,11 +54,26 @@ class InvisibleReCaptcha
         $this->siteKey = $siteKey;
         $this->secretKey = $secretKey;
         $this->setOptions($options);
-        $this->setClient(
-            new Client([
-                'timeout' => $this->getOption('timeout', 5)
-            ])
-        );
+        try{
+
+            $this->setClient(
+                new Client([
+                    'timeout' => $this->getOption('timeout', 5)
+                ])
+            );
+        }catch(\GuzzleHttp\Exception\ConnectException $exception){
+            $this->setClient(
+                new Client([
+                    'timeout' => $this->getOption('timeout', 5)
+                ])
+            );
+        }catch(\GuzzleHttp\Exception\ConnectException $exception){
+            $this->setClient(
+                new Client([
+                    'timeout' => $this->getOption('timeout', 5)
+                ])
+            );
+        }
     }
 
     /**
