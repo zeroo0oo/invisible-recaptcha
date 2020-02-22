@@ -62,17 +62,9 @@ class InvisibleReCaptcha
                 ])
             );
         }catch(\GuzzleHttp\Exception\ConnectException $exception){
-            $this->setClient(
-                new Client([
-                    'timeout' => $this->getOption('timeout', 5)
-                ])
-            );
-        }catch(\GuzzleHttp\Exception\ConnectException $exception){
-            $this->setClient(
-                new Client([
-                    'timeout' => $this->getOption('timeout', 5)
-                ])
-            );
+            return [
+                'error' => 1
+            ];
         }
     }
 
