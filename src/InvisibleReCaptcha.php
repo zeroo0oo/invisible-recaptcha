@@ -55,7 +55,6 @@ class InvisibleReCaptcha
         $this->secretKey = $secretKey;
         $this->setOptions($options);
         try{
-
             $this->setClient(
                 new Client([
                     'timeout' => $this->getOption('timeout', 5)
