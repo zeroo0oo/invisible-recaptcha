@@ -5,8 +5,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Albert Chen",
-            "homepage": "https://www.albert-chen.com"
+            "name": "Zeroo",
+            "homepage": ""
         }
     ],
     "require": {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AlbertCht\\InvisibleReCaptcha\\": "src/"
+            "Zeroo0oo\\InvisibleReCaptcha\\": "src/"
         }
     },
     "extra": {
